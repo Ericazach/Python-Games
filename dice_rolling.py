@@ -5,7 +5,8 @@ while True:
     answer = input("Roll the dice? (y/n): ").lower()
 
     if answer == "y":
-      print(random.randint(1, 6))
+      die = random.randint(1, 6)
+      print(f"Your dice roll is: {die}")
     elif answer == "n":
       print("Thank you for playing!")
       break
